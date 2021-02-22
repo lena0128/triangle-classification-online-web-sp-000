@@ -17,10 +17,6 @@ def kind
     raise TriangleError
   rescue TriangleError => error
     puts error.message
-else
-  :equilateral
-  :isosceles
-  :scalene
 end
 end
 
