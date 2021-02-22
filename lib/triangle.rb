@@ -32,7 +32,7 @@ end
 
 class TriangleError < StandardError
   def message
-    puts "Your triangle is illegal!"
+    puts "Each side must be larger than 0! The sum of the lengths of any two sides of a triangle always exceeds the length of the third side!"
   end
 end
 
