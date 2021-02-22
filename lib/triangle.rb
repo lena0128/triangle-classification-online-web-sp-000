@@ -19,7 +19,7 @@ end
 end
 
 class TriangleError < StandardError
-
+ puts "You are wrong!""
 end
 
 end
