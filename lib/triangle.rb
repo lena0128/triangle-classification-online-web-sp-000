@@ -16,6 +16,4 @@ def kind
 :scalene
 end
 
-  def
-
 end
