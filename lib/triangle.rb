@@ -13,11 +13,9 @@ def kind
     :equilateral
   elsif side_1 = side_2 || side_2 = side_3 || side_1 = side_3
     :isosceles
-  elsif
-
-
-
-
+  else
+    :scalene
+end
   if side_1 + side_2 < side_3 || side_2 + side_3 < side_1 || side_1 + side_3 < side_2
   raise TriangleError
 else
