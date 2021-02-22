@@ -11,7 +11,10 @@ class Triangle
 def kind
 
   if side_1 + side_2 < side_3 || side_2 + side_3 < side_1 || side_1 + side_3 < side_2
-  raise TriangleError
+    begin
+    raise TriangleError
+  rescue TriangleError => error
+    puts error.message
 else
   :equilateral
   :isosceles
