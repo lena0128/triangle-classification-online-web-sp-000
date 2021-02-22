@@ -9,7 +9,6 @@ class Triangle
   end
 
 def kind
-
   if side_1 + side_2 < side_3 || side_2 + side_3 < side_1 || side_1 + side_3 < side_2
     begin
     raise TriangleError
@@ -21,6 +20,7 @@ end
 end
 
 class TriangleError < StandardError
+  def message
  puts "You are wrong!"
 end
 
