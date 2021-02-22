@@ -9,9 +9,6 @@ class Triangle
   end
 
 def kind
-  :equilateral
-  :isosceles
-  :scalene
   if side_1 + side_2 < side_3 || side_2 + side_3 < side_1 || side_1 + side_3 < side_2
     begin
       raise TriangleError
@@ -19,7 +16,9 @@ def kind
       puts error.message
     end
   else
-    "Good!"
+    :equilateral
+    :isosceles
+    :scalene
   end
 end
 
