@@ -26,10 +26,10 @@ def kind
   end
 end
 
-end
-
 class TriangleError < StandardError
   def message
     puts "You are wrong!"
   end
+end
+
 end
